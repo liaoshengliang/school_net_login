@@ -1,9 +1,9 @@
+"by sl.leo"
 from urllib.request import *
 import urllib.parse
-import pickle
-import requests
+import cv2
 data={
-	"username":"15411012141",
+	"username":"1541101214",
 	"ac_id":"1",
 	"save_me":"1",
 	"ajax":"1"}
