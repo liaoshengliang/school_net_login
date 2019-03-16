@@ -1,8 +1,9 @@
 from urllib.request import *
 import urllib.parse
 import pickle
+import requests
 data={
-	"username":"1341101168",
+	"username":"15411012141",
 	"ac_id":"1",
 	"save_me":"1",
 	"ajax":"1"}
@@ -20,7 +21,7 @@ def logout(url,data):
           print(get.read().decode("utf-8"))
 
 if __name__=="__main__":
-          num=int(input("请选择功能(1 校园网登录。2 校园网注销）:"))
+          num=int(input("请选择功能(1 校园网登录。2 校园网注销。0 退出程序）:"))
           
           data["password"]=str(input("请输入密码："))
           if num==1:
