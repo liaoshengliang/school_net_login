@@ -1,9 +1,8 @@
-"by sl.leo"
 from urllib.request import *
 import urllib.parse
 import cv2
 data={
-	"username":"1541101214",
+	"username":"",
 	"ac_id":"1",
 	"save_me":"1",
 	"ajax":"1"}
@@ -22,7 +21,7 @@ def logout(url,data):
 
 if __name__=="__main__":
           num=int(input("请选择功能(1 校园网登录。2 校园网注销。0 退出程序）:"))
-          
+          data["username"]=str(input("请输入账号："))
           data["password"]=str(input("请输入密码："))
           if num==1:
                     data["action"]="login"
